@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FF4B97A1</color>
+    <color name="scy">#A7DDF6</color>
+    <color name="redCollor">#B00D0D</color>
+    <color name="greenCollor">#FF183B16</color>
+    <color name="blueCollor">#1A2D98</color>
+    <color name="yelowCollor">#D7BB20</color>
+    <color name="orangeCollor">#FFDE5A0D</color>
+    <color name="fiolCollor">#FF230F45</color>
+    <color name="Setting_fon_collor">#7C7B7B</color>
+
+
+</resources>

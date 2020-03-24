@@ -1,0 +1,1030 @@
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionScene">
+    <ConstraintSet android:id="@+id/capa">
+        <Constraint
+            android:id="@+id/cap1"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.006"
+            />
+        <Constraint
+            android:id="@+id/luyelow1"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue"
+            app:layout_constraintEnd_toStartOf="@+id/lublue"
+            />
+        <Constraint
+            android:id="@+id/lublue"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="58dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lured"
+            app:layout_constraintEnd_toStartOf="@+id/lured"
+            />
+        <Constraint
+            android:id="@+id/lublue1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cap1"
+            />
+        <Constraint
+            android:id="@+id/luyelow"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="21dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue1"
+            app:layout_constraintEnd_toStartOf="@+id/lublue1"
+            />
+        <Constraint
+            android:id="@+id/lured1"
+            android:alpha="0"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue1"
+            app:layout_constraintStart_toEndOf="@+id/lublue1"
+            />
+        <Constraint
+            android:id="@+id/lured"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="84dp"
+            app:layout_constraintBottom_toBottomOf="@+id/luyelow"
+            app:layout_constraintEnd_toStartOf="@+id/luyelow"
+            />
+
+
+
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/capa_end">
+        <Constraint
+            android:id="@+id/cap1"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.006"
+            />
+        <Constraint
+            android:id="@+id/luyelow1"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue"
+            app:layout_constraintEnd_toStartOf="@+id/lublue"
+            />
+        <Constraint
+            android:id="@+id/lublue"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="58dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lured"
+            app:layout_constraintEnd_toStartOf="@+id/lured"
+            />
+        <Constraint
+            android:id="@+id/lublue1"
+            android:alpha="0"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="24dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cap1"
+            />
+        <Constraint
+            android:id="@+id/luyelow"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="21dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue1"
+            app:layout_constraintEnd_toStartOf="@+id/lublue1"
+            />
+        <Constraint
+            android:id="@+id/lured1"
+            android:alpha="0"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue1"
+            app:layout_constraintStart_toEndOf="@+id/lublue1"
+            />
+        <Constraint
+            android:id="@+id/lured"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="84dp"
+            app:layout_constraintBottom_toBottomOf="@+id/luyelow"
+            app:layout_constraintEnd_toStartOf="@+id/luyelow"
+            />
+
+    </ConstraintSet>
+    <Transition
+
+        android:id="@+id/my_capa"
+        app:constraintSetStart="@+id/capa"
+        app:constraintSetEnd="@+id/capa_end"
+
+        app:duration="0"
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/cap1"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/cap1"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/cap1"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/cap1"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lured"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lured"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lured"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lured"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lured1"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lured1"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lured1"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lured1"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lublue"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lublue"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lublue"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lublue"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lublue1"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lublue1"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/lublue1"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lublue1"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/luyelow"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/luyelow"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/luyelow"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/luyelow"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/luyelow1"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/luyelow1"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/luyelow1"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/luyelow1"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+        </KeyFrameSet>
+
+
+
+    </Transition>
+
+
+
+    <Transition
+
+        android:id="@+id/my_transition4"
+        app:constraintSetStart="@+id/start_bluecap1"
+        app:constraintSetEnd="@+id/end_bluecap1"
+        app:duration="2000"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap1"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap1"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap1"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap1"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap1"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap1"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lublue1"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lublue1"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lublue1"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+
+        </KeyFrameSet>
+
+
+
+
+
+
+
+
+    </Transition>
+    <Transition
+        app:constraintSetStart="@+id/start_redcap1"
+        app:constraintSetEnd="@+id/end_redcap1"
+        app:duration="2000"
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap1"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap1"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap1"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap1"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap1"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap1"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lured1"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lured1"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lured1"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+
+        </KeyFrameSet>
+
+
+
+
+
+    </Transition>
+    <Transition
+
+        android:id="@+id/my_transition3"
+        app:constraintSetStart="@+id/start_yelowcap"
+        app:constraintSetEnd="@+id/end_yelowcap"
+        app:duration="2000"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/luyelow"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/luyelow"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/luyelow"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+        </KeyFrameSet>
+
+
+    </Transition>
+    <Transition
+
+        android:id="@+id/my_transition6"
+        app:constraintSetStart="@+id/start_yelowcap1"
+        app:constraintSetEnd="@+id/end_yelowcap1"
+        app:duration="2000"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap1"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap1"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap1"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap1"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap1"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap1"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/luyelow1"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/luyelow1"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/luyelow1"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+        </KeyFrameSet>
+
+
+    </Transition>
+
+    <Transition
+
+        android:id="@+id/my_transition"
+        app:constraintSetStart="@+id/start"
+        app:constraintSetEnd="@+id/end"
+        app:duration="2000"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lured"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lured"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lured"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+        </KeyFrameSet>
+
+
+
+    </Transition>
+    <Transition
+
+        android:id="@+id/my_transition1"
+        app:constraintSetStart="@+id/start_bluecap"
+        app:constraintSetEnd="@+id/end_bluecap"
+        app:duration="2000"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lublue"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lublue"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/lublue"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+        </KeyFrameSet>
+
+
+    </Transition>
+
+
+
+
+
+
+
+
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/redcap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="@+id/cap1"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <Constraint
+            android:id="@+id/lured"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="84dp"
+            app:layout_constraintBottom_toBottomOf="@+id/luyelow"
+            app:layout_constraintEnd_toStartOf="@+id/luyelow"/>
+
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/redcap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="208dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cap1"/>
+        <Constraint
+            android:id="@+id/lured"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="84dp"
+            app:layout_constraintBottom_toBottomOf="@+id/luyelow"
+            app:layout_constraintEnd_toStartOf="@+id/luyelow"/>
+
+
+    </ConstraintSet>
+
+
+
+
+
+<ConstraintSet android:id="@+id/start_bluecap">
+<Constraint
+    android:id="@+id/bluecap"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="104dp"
+    android:layout_marginTop="64dp"
+    app:layout_constraintStart_toStartOf="@+id/cap1"
+    app:layout_constraintTop_toTopOf="parent"/>
+    <Constraint
+        android:id="@+id/lublue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="58dp"
+        android:alpha="0 "
+        app:layout_constraintBottom_toBottomOf="@+id/lured"
+        app:layout_constraintEnd_toStartOf="@+id/lured"/>
+
+
+</ConstraintSet>
+    <ConstraintSet android:id="@+id/end_bluecap">
+
+    <Constraint
+
+        android:id="@+id/bluecap"
+        android:alpha="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cap1"
+
+
+        />
+        <Constraint
+            android:id="@+id/lublue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="58dp"
+            android:alpha="1"
+            app:layout_constraintBottom_toBottomOf="@+id/lured"
+            app:layout_constraintEnd_toStartOf="@+id/lured"
+            />
+
+
+</ConstraintSet>
+
+
+    <ConstraintSet android:id="@+id/start_yelowcap1">
+        <Constraint
+            android:id="@+id/yelowcap1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="67dp"
+            app:layout_constraintStart_toStartOf="@+id/cap1"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <Constraint
+            android:id="@+id/luyelow1"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue"
+            app:layout_constraintEnd_toStartOf="@+id/lublue"/>
+
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end_yelowcap1">
+
+        <Constraint
+
+            android:id="@+id/yelowcap1"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cap1"
+            />
+        <Constraint
+
+            android:id="@+id/luyelow1"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue"
+            app:layout_constraintEnd_toStartOf="@+id/lublue"
+            />
+
+
+
+    </ConstraintSet>
+
+
+
+    <ConstraintSet android:id="@+id/start_yelowcap">
+        <Constraint
+            android:id="@+id/yelowcap"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="192dp"
+            app:layout_constraintEnd_toEndOf="@+id/cap1"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <Constraint
+            android:id="@+id/luyelow"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="21dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue1"
+            app:layout_constraintEnd_toStartOf="@+id/lublue1"/>
+
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end_yelowcap">
+
+        <Constraint
+
+            android:id="@+id/yelowcap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="188dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cap1"
+            />
+        <Constraint
+
+            android:id="@+id/luyelow"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="21dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue1"
+            app:layout_constraintEnd_toStartOf="@+id/lublue1"
+            />
+
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/start_bluecap1">
+        <Constraint
+            android:id="@+id/bluecap1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="120dp"
+            app:layout_constraintEnd_toEndOf="@+id/cap1"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <Constraint
+            android:id="@+id/lublue1"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cap1"/>
+
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end_bluecap1">
+
+        <Constraint
+
+            android:id="@+id/bluecap1"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cap1"
+            />
+        <Constraint
+
+            android:id="@+id/lublue1"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cap1"
+            />
+
+
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/start_redcap1">
+        <Constraint
+            android:id="@+id/redcap1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="44dp"
+            app:layout_constraintEnd_toEndOf="@+id/cap1"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <Constraint
+            android:id="@+id/lured1"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue1"
+            app:layout_constraintStart_toEndOf="@+id/lublue1"
+            />
+
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end_redcap1">
+        <Constraint
+            android:id="@+id/redcap1"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cap1"/>
+        <Constraint
+            android:id="@+id/lured1"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lublue1"
+            app:layout_constraintStart_toEndOf="@+id/lublue1"/>
+
+
+    </ConstraintSet>
+
+
+    <Transition
+
+        android:id="@+id/my_capa09"
+        app:constraintSetStart="@+id/end_yelowcap"
+        app:constraintSetEnd="@+id/start_yelowcap"
+
+        app:duration="0"
+        >
+    </Transition>
+    <Transition
+
+        android:id="@+id/my_capa2"
+        app:constraintSetStart="@+id/capa_end"
+        app:constraintSetEnd="@+id/capa"
+
+        app:duration="0"
+        >
+    </Transition>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</MotionScene>

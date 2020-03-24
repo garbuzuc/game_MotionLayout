@@ -1,0 +1,156 @@
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/scy"
+    app:layoutDescription="@xml/bobo"
+    >
+
+
+    <ImageView
+        android:id="@+id/cap1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="@string/cap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/cap1" />
+
+    <ImageView
+        android:id="@+id/redcap"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="40dp"
+        android:onClick="cap"
+        app:layout_constraintStart_toStartOf="@+id/cap1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/redcap" />
+
+    <ImageView
+        android:id="@+id/yelowcap1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="67dp"
+        android:onClick="cap"
+        app:layout_constraintStart_toStartOf="@+id/cap1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/yelowcap" />
+
+    <ImageView
+        android:id="@+id/bluecap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="64dp"
+        android:onClick="cap"
+        app:layout_constraintStart_toStartOf="@+id/cap1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/bluecap" />
+
+    <ImageView
+        android:id="@+id/yelowcap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="192dp"
+        android:onClick="cap"
+        app:layout_constraintEnd_toEndOf="@+id/cap1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/yelowcap" />
+
+    <ImageView
+        android:id="@+id/redcap1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="44dp"
+        android:onClick="cap"
+        app:layout_constraintEnd_toEndOf="@+id/cap1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/redcap" />
+
+    <ImageView
+        android:id="@+id/luyelow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/lublue"
+        app:layout_constraintEnd_toStartOf="@+id/lublue"
+        app:srcCompat="@mipmap/luyelow" />
+
+    <ImageView
+        android:id="@+id/lublue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="58dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/lured"
+        app:layout_constraintEnd_toStartOf="@+id/lured"
+        app:srcCompat="@mipmap/lublue" />
+
+    <ImageView
+        android:id="@+id/lured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/luyelow"
+        app:layout_constraintEnd_toStartOf="@+id/luyelow"
+        app:srcCompat="@mipmap/lured" />
+
+    <ImageView
+        android:id="@+id/lublue1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="24dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cap1"
+        app:srcCompat="@mipmap/lublue" />
+
+    <ImageView
+        android:id="@+id/bluecap1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="120dp"
+        android:onClick="cap"
+        app:layout_constraintEnd_toEndOf="@+id/cap1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/bluecap" />
+
+    <ImageView
+        android:id="@+id/luyelow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/lublue1"
+        app:layout_constraintEnd_toStartOf="@+id/lublue1"
+        app:srcCompat="@mipmap/luyelow" />
+
+    <ImageView
+        android:id="@+id/lured1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/lublue1"
+        app:layout_constraintStart_toEndOf="@+id/lublue1"
+        app:srcCompat="@mipmap/lured" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

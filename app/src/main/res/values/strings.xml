@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="cap">cap</string>
+    <string name="palitra">palitra</string>
+
+    <string name="ending_set">\@id/ending_set</string>
+    <string name="starting_set">\@id/starting_set</string>
+
+    <string name="redcapa">\@+id/redcap</string>
+    <string name="redlu">\@mipmap/redlu</string>
+    <string name="yellowcap2">\@mipmap/yelowcapmdpi</string>
+    <string name="op">\@xml/op</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Названия -->
+    <string name="sound">Музыка</string>
+    <string name="language">Язык</string>
+
+    <!-- Подпись кнопок -->
+    <string name="music">Фоновая музыка</string>
+    <string name="Language">Выбор языка</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+</resources>

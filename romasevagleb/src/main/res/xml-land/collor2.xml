@@ -1,0 +1,3514 @@
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <ConstraintSet android:id="@+id/startyelow">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yelowcap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"/>
+
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+
+
+    <ConstraintSet android:id="@+id/endyelow">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="34dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+
+    <Transition
+
+        android:id="@+id/my_transitionyelow"
+        app:constraintSetStart="@+id/startyelow"
+        app:constraintSetEnd="@+id/endyelow"
+        app:duration="1500"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+
+
+
+
+
+        </KeyFrameSet>
+
+
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/kisyelowcap">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yelowcap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionyelowlu"
+        app:constraintSetStart="@+id/endyelow"
+        app:constraintSetEnd="@+id/kisyelowcap"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+    <ConstraintSet android:id="@+id/kiscyelowlu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yelowcap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/yelowlu"
+            app:layout_constraintEnd_toEndOf="@+id/yelowlu"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_tra"
+        app:constraintSetStart="@+id/kisyelowcap"
+        app:constraintSetEnd="@+id/kiscyelowlu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/starblue">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"/>
+
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/endblue">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+
+        android:id="@+id/my_transitionblue"
+        app:constraintSetStart="@+id/starblue"
+        app:constraintSetEnd="@+id/endblue"
+        app:duration="1500"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+
+
+
+
+
+        </KeyFrameSet>
+
+
+
+    </Transition>
+    <ConstraintSet android:id="@+id/kisbluecap">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionbluelu"
+        app:constraintSetStart="@+id/endblue"
+        app:constraintSetEnd="@+id/kisbluecap"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+
+
+
+
+
+    <ConstraintSet android:id="@+id/kiscbluelu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/yelowlu"
+            app:layout_constraintEnd_toEndOf="@+id/yelowlu"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_trans"
+        app:constraintSetStart="@+id/kisbluecap"
+        app:constraintSetEnd="@+id/kiscbluelu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+
+        </KeyFrameSet>
+    </Transition>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ConstraintSet android:id="@+id/staryelowGreenlu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yelowcap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"/>
+
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/endyeloweGreenlu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="34dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+
+        android:id="@+id/my_transitionyelowGreenlu"
+        app:constraintSetStart="@+id/staryelowGreenlu"
+        app:constraintSetEnd="@+id/endyeloweGreenlu"
+        app:duration="1500"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+
+
+
+
+
+        </KeyFrameSet>
+
+
+
+    </Transition>
+    <ConstraintSet android:id="@+id/kisyelowcapGreenlu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yelowcap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionyelowluGreenlu"
+        app:constraintSetStart="@+id/endyeloweGreenlu"
+        app:constraintSetEnd="@+id/kisyelowcapGreenlu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+
+
+
+
+
+    <ConstraintSet android:id="@+id/kiscyelowluGreenlu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yelowcap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/yelowlu"
+            app:layout_constraintEnd_toEndOf="@+id/yelowlu"/>
+        <Constraint
+            android:id="@+id/greenlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_traGreenlu"
+        app:constraintSetStart="@+id/kisyelowcapGreenlu"
+        app:constraintSetEnd="@+id/kiscyelowluGreenlu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowcap"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="20"
+                app:motionProgress="20"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/greenlu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/greenlu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/greenlu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+
+
+
+
+
+
+
+
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/Greenluend">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+
+        <Constraint
+            android:id="@+id/greenfin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.826"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.378"/>
+        <Constraint
+            android:id="@+id/greenlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_traGreenluend"
+        app:constraintSetStart="@+id/kiscyelowluGreenlu"
+        app:constraintSetEnd="@+id/Greenluend"
+        app:autoTransition="animateToEnd"
+        app:duration="1500">
+        <KeyFrameSet>
+
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/greenlu"
+                app:framePosition="100"
+                app:motionProgress="100"/>
+
+
+        </KeyFrameSet>
+
+    </Transition>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ConstraintSet android:id="@+id/starblueGreenlu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"/>
+
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/endblueGreenlu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"/>
+        <Constraint
+            android:id="@+id/bluecap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+
+        android:id="@+id/my_transitionblueGreenlu"
+        app:constraintSetStart="@+id/starblueGreenlu"
+        app:constraintSetEnd="@+id/endblueGreenlu"
+        app:duration="1500"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+
+
+
+
+
+        </KeyFrameSet>
+
+
+
+    </Transition>
+    <ConstraintSet android:id="@+id/kisbluecapGreenlu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionblueluGreenlu"
+        app:constraintSetStart="@+id/endblueGreenlu"
+        app:constraintSetEnd="@+id/kisbluecapGreenlu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+
+
+
+
+
+    <ConstraintSet android:id="@+id/kiscblueluGreenlu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bluelu"
+            app:layout_constraintEnd_toEndOf="@+id/bluelu"/>
+        <Constraint
+            android:id="@+id/greenlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_trablueGreenlu"
+        app:constraintSetStart="@+id/kisbluecapGreenlu"
+        app:constraintSetEnd="@+id/kiscblueluGreenlu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="20"
+                app:motionProgress="20"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/greenlu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/greenlu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/greenlu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+
+
+
+
+
+
+
+
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/Greenlublueend">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/yelowlu"
+            app:layout_constraintEnd_toEndOf="@+id/yelowlu"/>
+        <Constraint
+            android:id="@+id/greenfin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.826"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.378"/>
+        <Constraint
+            android:id="@+id/greenlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_traGreenblueluend"
+        app:constraintSetStart="@+id/kiscblueluGreenlu"
+        app:constraintSetEnd="@+id/Greenlublueend"
+        app:autoTransition="animateToEnd"
+        app:duration="1500">
+        <KeyFrameSet>
+
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/greenlu"
+                app:framePosition="100"
+                app:motionProgress="100"/>
+
+
+        </KeyFrameSet>
+
+
+    </Transition>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ConstraintSet android:id="@+id/staryellow1">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yellowcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"/>
+
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/endllowcap1">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+
+        android:id="@+id/my_transitionyellow"
+        app:constraintSetStart="@+id/staryellow1"
+        app:constraintSetEnd="@+id/endllowcap1"
+        app:duration="1500"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+
+
+
+
+
+        </KeyFrameSet>
+
+
+
+    </Transition>
+    <ConstraintSet android:id="@+id/kisyelow1cap">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yellowcap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionyellowlu"
+        app:constraintSetStart="@+id/endllowcap1"
+        app:constraintSetEnd="@+id/kisyelow1cap"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+
+
+
+
+
+    <ConstraintSet android:id="@+id/kiscyellowlu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yellowcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/yelowlu"
+            app:layout_constraintEnd_toEndOf="@+id/yelowlu"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transyellow1"
+        app:constraintSetStart="@+id/kisyelow1cap"
+        app:constraintSetEnd="@+id/kiscyellowlu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+
+        </KeyFrameSet>
+    </Transition>
+
+
+
+
+
+
+    <ConstraintSet android:id="@+id/startred">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"/>
+
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+
+
+    <ConstraintSet android:id="@+id/endyred">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="34dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+
+    <Transition
+
+        android:id="@+id/my_transitionred"
+        app:constraintSetStart="@+id/startred"
+        app:constraintSetEnd="@+id/endyred"
+        app:duration="1500"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+
+
+
+
+
+        </KeyFrameSet>
+
+
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/kisredcap">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionredlu"
+        app:constraintSetStart="@+id/endyred"
+        app:constraintSetEnd="@+id/kisredcap"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+    <ConstraintSet android:id="@+id/kiscredlu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/redlu"
+            app:layout_constraintEnd_toEndOf="@+id/redlu"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_trared"
+        app:constraintSetStart="@+id/kisredcap"
+        app:constraintSetEnd="@+id/kiscredlu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+        </KeyFrameSet>
+    </Transition>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ConstraintSet android:id="@+id/startredOrangelu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"/>
+
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/endredOrangelu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="34dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionredOrangelu"
+        app:constraintSetStart="@+id/startredOrangelu"
+        app:constraintSetEnd="@+id/endredOrangelu"
+        app:duration="1500"
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/kisredcapOrangelu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionredluOrange"
+        app:constraintSetStart="@+id/endredOrangelu"
+        app:constraintSetEnd="@+id/kisredcapOrangelu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+    <ConstraintSet android:id="@+id/kiscredluOrangelu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/redlu"
+            app:layout_constraintEnd_toEndOf="@+id/redlu"/>
+        <Constraint
+            android:id="@+id/oranglu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_traOrange"
+        app:constraintSetStart="@+id/kisredcapOrangelu"
+        app:constraintSetEnd="@+id/kiscredluOrangelu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="20"
+                app:motionProgress="20"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yelowlu"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/oranglu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/oranglu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/oranglu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/Orangeluend">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+
+        <Constraint
+            android:id="@+id/oranglufin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="@+id/greenfin"
+            app:layout_constraintTop_toBottomOf="@+id/greenfin"/>
+        <Constraint
+            android:id="@+id/oranglu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/yelowlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_traOrangeluend"
+        app:constraintSetStart="@+id/kiscredluOrangelu"
+        app:constraintSetEnd="@+id/Orangeluend"
+        app:autoTransition="animateToEnd"
+        app:duration="1500">
+        <KeyFrameSet>
+
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/oranglu"
+                app:framePosition="100"
+                app:motionProgress="100"/>
+
+
+        </KeyFrameSet>
+
+    </Transition>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ConstraintSet android:id="@+id/staryellow1Orangelu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yellowcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"/>
+
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/endyellow1Orangelu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"/>
+        <Constraint
+            android:id="@+id/yellowcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+
+        android:id="@+id/my_transitionyellow1Orangelu"
+        app:constraintSetStart="@+id/staryellow1Orangelu"
+        app:constraintSetEnd="@+id/endyellow1Orangelu"
+        app:duration="1500"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+
+
+
+
+
+        </KeyFrameSet>
+
+
+
+    </Transition>
+    <ConstraintSet android:id="@+id/kisyellow1capOrangelu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yellowcap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionyellow1luOrangelu"
+        app:constraintSetStart="@+id/endyellow1Orangelu"
+        app:constraintSetEnd="@+id/kisyellow1capOrangelu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+
+
+
+
+
+    <ConstraintSet android:id="@+id/kiscyellow1luOrangelu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yellowcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/yelowlu"
+            app:layout_constraintEnd_toEndOf="@+id/yelowlu"/>
+        <Constraint
+            android:id="@+id/oranglu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_trayellow1Orangelu"
+        app:constraintSetStart="@+id/kisyellow1capOrangelu"
+        app:constraintSetEnd="@+id/kiscyellow1luOrangelu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/yellowcap2"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="20"
+                app:motionProgress="20"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/oranglu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/oranglu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/oranglu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+
+
+
+
+
+
+
+
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/Orangeluyellow1end">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/yellowcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/yelowlu"
+            app:layout_constraintEnd_toEndOf="@+id/yelowlu"/>
+        <Constraint
+            android:id="@+id/oranglufin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="@+id/greenfin"
+            app:layout_constraintTop_toBottomOf="@+id/greenfin"/>
+        <Constraint
+            android:id="@+id/oranglu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_traOrangeyellow1luend"
+        app:constraintSetStart="@+id/kiscyellow1luOrangelu"
+        app:constraintSetEnd="@+id/Orangeluyellow1end"
+        app:autoTransition="animateToEnd"
+        app:duration="1500">
+        <KeyFrameSet>
+
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/oranglu"
+                app:framePosition="100"
+                app:motionProgress="100"/>
+
+
+        </KeyFrameSet>
+
+
+    </Transition>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ConstraintSet android:id="@+id/starblue1">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"/>
+
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+
+
+    <ConstraintSet android:id="@+id/endblue1">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="34dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+
+    <Transition
+
+        android:id="@+id/my_transitionblue1"
+        app:constraintSetStart="@+id/starblue1"
+        app:constraintSetEnd="@+id/endblue1"
+        app:duration="1500"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+
+
+
+
+
+        </KeyFrameSet>
+
+
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/kisblue1cap">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionblue1lu"
+        app:constraintSetStart="@+id/endblue1"
+        app:constraintSetEnd="@+id/kisblue1cap"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+    <ConstraintSet android:id="@+id/kiscbluelu1">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bluelu"
+            app:layout_constraintEnd_toEndOf="@+id/bluelu"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_trablue1"
+        app:constraintSetStart="@+id/kisblue1cap"
+        app:constraintSetEnd="@+id/kiscbluelu1"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+        </KeyFrameSet>
+    </Transition>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ConstraintSet android:id="@+id/startred1">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"/>
+
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/endred1">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+
+        android:id="@+id/my_transitionred1"
+        app:constraintSetStart="@+id/startred1"
+        app:constraintSetEnd="@+id/endred1"
+        app:duration="1500"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+
+
+
+
+
+        </KeyFrameSet>
+
+
+
+    </Transition>
+    <ConstraintSet android:id="@+id/kisred1cap">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionred1lu"
+        app:constraintSetStart="@+id/endred1"
+        app:constraintSetEnd="@+id/kisred1cap"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+
+
+
+
+
+    <ConstraintSet android:id="@+id/kiscred1lu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/redlu"
+            app:layout_constraintEnd_toEndOf="@+id/redlu"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transred1"
+        app:constraintSetStart="@+id/kisred1cap"
+        app:constraintSetEnd="@+id/kiscred1lu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+
+        </KeyFrameSet>
+    </Transition>
+
+
+
+
+
+
+
+    <ConstraintSet android:id="@+id/startredFiollu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"/>
+
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/endredFiollu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"/>
+        <Constraint
+            android:id="@+id/redcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+
+        android:id="@+id/my_transitionredFiollu"
+        app:constraintSetStart="@+id/startredFiollu"
+        app:constraintSetEnd="@+id/endredFiollu"
+        app:duration="1500"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+
+
+
+
+
+        </KeyFrameSet>
+
+
+
+    </Transition>
+    <ConstraintSet android:id="@+id/kisredcapFiollu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionredluFiollu"
+        app:constraintSetStart="@+id/endredFiollu"
+        app:constraintSetEnd="@+id/kisredcapFiollu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+
+
+
+
+
+    <ConstraintSet android:id="@+id/kissredluFiollu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/redlu"
+            app:layout_constraintEnd_toEndOf="@+id/redlu"/>
+        <Constraint
+            android:id="@+id/fiollu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_traredFiollu"
+        app:constraintSetStart="@+id/kisredcapFiollu"
+        app:constraintSetEnd="@+id/kissredluFiollu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redcap2"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="20"
+                app:motionProgress="20"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluelu"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/fiollu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/fiollu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/fiollu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+
+
+
+
+
+
+
+
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/Fiolluredend">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/redcap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/redlu"
+            app:layout_constraintEnd_toEndOf="@+id/redlu"/>
+        <Constraint
+            android:id="@+id/fiollufin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@+id/oranglufin"
+            app:layout_constraintTop_toBottomOf="@+id/oranglufin"/>
+        <Constraint
+            android:id="@+id/fiollu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_traFiolredluend"
+        app:constraintSetStart="@+id/kissredluFiollu"
+        app:constraintSetEnd="@+id/Fiolluredend"
+        app:autoTransition="animateToEnd"
+        app:duration="1500">
+        <KeyFrameSet>
+
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/fiollu"
+                app:framePosition="100"
+                app:motionProgress="100"/>
+
+
+        </KeyFrameSet>
+
+
+    </Transition>
+
+
+
+
+
+
+
+
+
+
+
+
+    <ConstraintSet android:id="@+id/starblue1Fiollu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"/>
+
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/endblue1Fiollu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="34dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"/>
+        <Constraint
+            android:id="@+id/bluelu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+
+        android:id="@+id/my_transitionblue1Fiollu"
+        app:constraintSetStart="@+id/starblue1Fiollu"
+        app:constraintSetEnd="@+id/endblue1Fiollu"
+        app:duration="1500"
+
+        >
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="25"
+                app:motionProgress="25"/>
+
+
+
+
+
+        </KeyFrameSet>
+
+
+
+    </Transition>
+    <ConstraintSet android:id="@+id/kisblue1capFiollu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kisc"
+            app:layout_constraintEnd_toEndOf="@+id/kisc"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_transitionblue1luFiollu"
+        app:constraintSetStart="@+id/endblue1Fiollu"
+        app:constraintSetEnd="@+id/kisblue1capFiollu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+    </Transition>
+
+
+
+
+
+    <ConstraintSet android:id="@+id/kiscblueluFiollu">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+        <Constraint
+            android:id="@+id/bluecap2"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bluelu"
+            app:layout_constraintEnd_toEndOf="@+id/bluelu"/>
+        <Constraint
+            android:id="@+id/fiollu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_traFiollu"
+        app:constraintSetStart="@+id/kisblue1capFiollu"
+        app:constraintSetEnd="@+id/kiscblueluFiollu"
+        app:autoTransition="animateToEnd"
+        app:duration="1500"
+
+        >
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="75"
+                app:motionProgress="75"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="90"
+                app:motionProgress="90"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="91"
+                app:motionProgress="91"/>
+
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/bluecap2"
+                app:framePosition="99"
+                app:motionProgress="99"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="20"
+                app:motionProgress="20"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="50"
+                app:motionProgress="50"/>
+            <KeyAttribute
+                android:alpha="1"
+                app:motionTarget="@+id/redlu"
+                app:framePosition="98"
+                app:motionProgress="98"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/fiollu"
+                app:framePosition="51"
+                app:motionProgress="51"/>
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/fiollu"
+                app:framePosition="70"
+                app:motionProgress="70"/>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/fiollu"
+                app:framePosition="97"
+                app:motionProgress="97"/>
+
+
+
+
+
+
+
+
+
+
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/Fiolluend">
+        <Constraint
+            android:id="@+id/kisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+
+        <Constraint
+            android:id="@+id/fiollufin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@+id/oranglufin"
+            app:layout_constraintTop_toBottomOf="@+id/oranglufin"/>
+        <Constraint
+            android:id="@+id/fiollu"
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Constraint
+            android:id="@+id/redlu"
+            android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/my_traFiolluend"
+        app:constraintSetStart="@+id/kiscblueluFiollu"
+        app:constraintSetEnd="@+id/Fiolluend"
+        app:autoTransition="animateToEnd"
+        app:duration="1500">
+        <KeyFrameSet>
+
+
+            <KeyAttribute
+                android:alpha="0"
+                app:motionTarget="@+id/fiollu"
+                app:framePosition="100"
+                app:motionProgress="100"/>
+
+
+        </KeyFrameSet>
+
+    </Transition>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</MotionScene>
